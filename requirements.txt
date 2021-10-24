@@ -1,0 +1,4 @@
+Flask
+pyjwt
+dotenv
+requests

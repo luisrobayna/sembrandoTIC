@@ -1,0 +1,10 @@
+#No subir el archivo con la clave para decodificar token
+/.env
+/plataforma.db
+/env
+/__pycache__
+/datos/__pycache__
+/models/__pycache__
+/routes/__pycache__
+/services/__pycache__
+/.vscode

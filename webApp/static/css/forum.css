@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#filters{
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding-top: 150px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    
+}
+
+#filters p{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #4ca06c;
+    width: 100%;
+    max-width: 892px;
+    min-width: 416px;
+    height: auto;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #3c975f;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#filters p span{
+    padding: 10px;
+    color: white;
+    border: 1px solid #3c975f;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+#filters p span:hover{
+    background-color: #70be8e;
+    cursor: pointer;
+}
+
+#search{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+#search i{
+    position: relative;
+    left: -35px;
+    font-size: 20px;
+}
+
+#search #search_post{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 5px;
+}
+
+#create_post{
+    display: none;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 30px;
+
+}
+
+#create_post #add_post{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    transition: all 300ms;
+}
+
+#add_post i{
+    margin-left: 10px;
+}
+
+#create_post #add_post:hover{
+    cursor: pointer;
+    background-color: rgb(85, 78, 78);
+}
+
+
+/*Class when you push and choose a filter*/
+#filters .push_button{
+    border: 1px solid #3c975f;
+    box-shadow: inset 1px 1px 5px black;
+}
+/***********************************************/
+
+#noPosts{
+    width: 80%;
+    height: auto;
+    background-color: #4ca06c;
+    border-top: 1px solid black;
+    border-radius: 5px;
+}
+
+#noPosts p{
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+#forum_posts{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+#forum_posts .post{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid black;
+    border-radius: 5px;
+    background-color: #4ca06c;
+    transition: all 300ms;
+}
+
+#forum_posts .post:hover{
+    background-color: #70be8e;
+    transform: scale(1.03);
+    box-shadow: 1px 1px 5px black;
+    box-shadow: -1px -1px 5px black;
+}
+
+#forum_posts .post:last-child{
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.post a,
+.post a:link,
+.post a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.post a:hover{
+    color: skyblue;
+}
+
+
+.post a h3{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: 'Open sans',sans-serif;
+}
+
+.post span{
+    float: right;
+    margin-right: 35px;
+    margin-top: -29px;
+    font-family: monospace;
+}
+
+.post span i{
+    font-size: 30px;
+    color: white;
+}
+
+.post .amount{
+    position: absolute;
+    margin: 0px;
+    margin-left: -30px;
+    top: 70px;
+}
+
+.date_post{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.user_name{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 650px){
+    #search #search_post{
+        width: 350px;
+    }
+}

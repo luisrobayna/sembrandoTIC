@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Site</title>
+    <link rel="shortcut icon" href="/static/img/definitivo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://kit.fontawesome.com/0ad95c2b77.js" crossorigin="anonymous"></script>
+    <script src="/static/js/register.js"></script>
+    
+</head>
+<body>
+    <div id="container">
+        
+        <div id="leftSide">
+            <a href="{{ url_for('home') }}"><i class="fas fa-home" id="home"></i></a> 
+            <p>Se parte de nuestra comunidad</p>
+            <p>comparte tus pensamientos con el resto</p>
+            <img src="/static/img/r3.svg" alt="Persona esperando a otra en un arbol">
+        </div>
+    
+        <div id="rightSide">
+            <div id="btn-group">
+                <button id="sing-up">Registro</button>
+                <button id="sing-in">Login</button>
+            </div>
+            <form action="" method="post" id="formContainer">
+                <label for="userName">NOMBRE DE USUARIO</label><br>
+                <input type="text" name="userName" placeholder="Ingresa nombre de usuario" id="user_name" ><br>
+                <label for="email">E-MAIL</label><br>
+                <input type="text" name="email" placeholder="Ingresa tu e-mail" id="email" ><br> 
+                <label for="password">CONTRASEÑA</label><br>
+                <input type="password" name="password" placeholder="XXXXXXX" id="password" > <br>
+                <input type="submit" name="submit" id="submitForm" value="Registrarse">
+            </form>
+            <div id="alert">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
